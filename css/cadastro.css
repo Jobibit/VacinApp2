@@ -1,0 +1,146 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient( #FC9CA3, #E2647F, #CC4A78);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  width: 100%;
+  max-width: 400px;
+  padding: 20px;
+}
+
+.login-box {
+  background: white;
+  border-radius: 20px;
+  box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo {
+  width: 80px;
+  margin-bottom: 10px;
+}
+
+.title {
+  color: #d14b77;
+  font-size: 28px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.subtitle {
+  font-weight: bold;
+  color: #d14b77;
+  margin-bottom: 20px;
+}
+
+label {
+  width: 100%;
+  font-size: 14px;
+  font-weight: bold;
+  margin-top: 15px;
+  color: #d56a8d;
+}
+
+.input-box {
+  width: 100%;
+  position: relative;
+  margin-top: 5px;
+}
+
+.input-box input {
+  width: 100%;
+  padding: 12px 40px 12px 10px;
+  border: 2px solid #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 3px 0 0 #f8a6c1;
+  outline: none;
+  font-size: 16px;
+}
+
+
+.input-box .icon {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 18px;
+  color: #d56a8d;
+  cursor: pointer;
+}
+
+.btn {
+  width: 100%;
+  background: #f2789f;
+  color: white;
+  padding: 12px;
+  margin-top: 20px;
+  border: none;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background: #e86690;
+}
+
+@media (max-width: 480px) {
+  .login-box {
+    padding: 20px;
+  }
+
+  .logo {
+    width: 60px;
+  }
+
+  .title {
+    font-size: 24px;
+  }
+
+  .btn {
+    font-size: 14px;
+    padding: 10px;
+  }
+}
+
+.toggle-password img {
+  cursor: pointer;
+}
+
+.toggle-password img {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+
+.container {
+  width: 100%;
+  max-width: 600px; /* aumente conforme desejar */
+  padding: 20px;
+}
+
+body, html {
+  height: 100%;
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(#FFB7C5, #F97C8C, #D9607B);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

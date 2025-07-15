@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+  font-family: 'Arial Rounded MT Bold', sans-serif;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  flex-direction: row;
+}
+
+.left, .right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.left {
+  background: linear-gradient(to bottom, #FC9CA3, #E2647F, #CC4A78);
+}
+
+.right {
+  background: white;
+  padding: 1rem;
+}
+
+.dog-img {
+  width: 700px;
+  max-width: 500px;
+}
+
+.logo {
+  width: 200px;
+  margin-bottom: 1rem;
+}
+
+h1 {
+  color: #e94c88;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+button {
+  background-color: #FF849F;
+  color: white;
+  font-size: 1.2rem;
+  padding: 1rem 4rem;
+  margin: 0.5rem;
+  border: none;
+  border-radius: 12px;
+  font-weight: bold;
+  box-shadow: 2px 4px 4px #c77c98;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: #e45e92;
+}
+
+button {
+  width: 250px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .dog-img {
+    max-width: 100%;
+    margin-top: 2rem;
+  }
+
+  button {
+    width: 70%;
+  }
+
+  h1 {
+    font-size: 1.6rem;
+  }
+}

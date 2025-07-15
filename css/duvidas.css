@@ -1,0 +1,172 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background: linear-gradient(to bottom right, #FC9CA3, #E2647F, #CC4A78);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.menu {
+  padding: 15px;
+  text-align: center;
+}
+
+.menu ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+  list-style: none;
+}
+
+.menu li {
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.menu img {
+  width: 20px;
+  height: 20px;
+}
+
+.container {
+  max-width: 1000px;
+  background: white;
+  margin: 30px auto;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 8px 8px 7px rgba(0, 0, 0, 0.452), -8px -8px 7px rgba(255, 255, 255, 0.253);
+}
+
+.logo {
+  width: 100px;
+  display: block;
+  margin: 0 auto 20px;
+}
+
+.duvidas-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(to right, #FF849F, #994F77);
+  color: white;
+  padding: 20px 30px;
+  border-radius: 20px;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+}
+
+.duvidas-texto {
+  flex: 1;
+}
+
+.duvidas-texto h2 {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.duvidas-texto p {
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 1.4;
+}
+
+.personagem-duvida {
+  width: 100%;
+  max-width: 260px;
+  height: auto;
+  object-fit: contain;
+}
+
+.duvidas {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.duvida {
+  background-color: #fff0f4;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 2px 2px 6px rgba(255, 105, 130, 0.2);
+}
+
+.duvida h3 {
+  background-color: #FF849F;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 15px;
+  margin-bottom: 10px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.duvida p {
+  font-size: 15px;
+  color: #333;
+  line-height: 1.6;
+}
+
+.duvida ul {
+  margin-top: 8px;
+  margin-left: 25px;
+  color: #444;
+  font-size: 14px;
+  line-height: 1.6;
+  list-style: disc;
+}
+
+.duvida ul ul {
+  margin-left: 20px;
+  list-style: circle;
+}
+
+@media (max-width: 768px) {
+  .menu ul {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .container {
+    margin: 20px 10px;
+    padding: 15px;
+  }
+
+  .duvidas-box {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .personagem-duvida {
+    margin-top: 15px;
+    width: 120px;
+  }
+
+  .duvidas-texto h2 {
+    font-size: 24px;
+  }
+
+  .duvidas-texto p {
+    font-size: 14px;
+  }
+
+  .duvida h3 {
+    font-size: 15px;
+  }
+
+  .duvida p,
+  .duvida ul {
+    font-size: 14px;
+  }
+}

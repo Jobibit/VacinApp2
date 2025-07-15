@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VacinApp - Principal</title>
+  <link rel="stylesheet" href="/css/principal.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/img/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href=/img/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon-16x16.png">
+  <link rel="manifest" href="/img/site.webmanifest">
+</head>
+<body>
+  <nav class="menu">
+    <ul>
+      <li onclick="location.href='principal.html'"><img src="/img/casa.png" alt=""> Início</li>
+      <li onclick="location.href='minhasaude.html'"><img src="/img/seringa.png" alt=""> Minha Saúde</li>
+      <li onclick="location.href='duvidas.html'"><img src="/img/interrogação.png" alt=""> Dúvidas</li>
+      <li onclick="location.href='index.html'"><img src="/img/perfil.png" alt=""> Logout</li>
+    </ul>
+  </nav>
+
+  <div class="main-container">
+    <img src="/img/vacinapp.png" class="logo" alt="Logo VacinApp" />
+
+    <div class="carrossel">
+      <button class="seta" id="anterior">&#10094;</button>
+      <div class="slide ativo">
+        <p><strong> variante do coronavírus, XFG é identificada pela primeira vez no Ceará; veja como se prevenir.</strong></p>
+        <img src="/img/enfermeira.png" alt="Cientista" />
+      </div>
+      <div class="slide">
+        <p><strong>Beta ressurge no Norte do Brasil; autoridades reforçam importância da vacinação.</strong></p>
+        <img src="/img/medica.png" alt="Cientista 2" />
+      </div>
+      <button class="seta" id="proximo">&#10095;</button>
+    </div>
+
+    <div class="cards">
+      <div class="card">
+        <img src="/img/fakenews.png" alt="Fake News" />
+        <p>Combate à desinformação na área da saúde: uma luta de todos (<a href="https://www.gov.br/saude/pt-br/assuntos/saude-com-ciencia/noticias/2024/maio/combate-a-desinformacao-na-area-da-saude-uma-luta-de-todos">Acompanhe aqui</a>)</p>
+      </div>
+      <div class="card">
+        <img src="/img/criancadeficiente.png" alt="Crianças" />
+        <p>Crianças com Deficiência (<a href="https://www.unicef.org/brazil/comunicados-de-imprensa/ha-no-mundo-quase-240-milhoes-de-criancas-com-deficiencia-revela-analise-do-unicef">Acompanhe aqui</a>)</p>
+      </div>
+      <div class="card">
+        <img src="/img/urgencia.png" alt="Urgência" />
+        <p>Quais sinais indicam que você precisa levar a criança à um serviço de saúde com urgência?(<a href="https://www.apm.org.br/quando-levar-uma-crianca-ao-pronto-socorro-especialistas-explicam-os-sinais-de-alerta/">Acompanhe aqui</a>)</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="/javascript/principal.js"></script>
+</body>
+</html>

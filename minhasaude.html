@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Minha Saúde</title>
+  <link rel="stylesheet" href="/css/minhasaude.css">
+  <link rel="apple-touch-icon" sizes="180x180" href="/img/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href=/img/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon-16x16.png">
+  <link rel="manifest" href="/img/site.webmanifest">
+</head>
+<body>
+  <nav class="menu">
+    <ul>
+      <li onclick="location.href='principal.html'"><img src="/img/casa.png" alt=""> Início</li>
+      <li onclick="location.href='minhasaude.html'"><img src="/img/seringa.png" alt=""> Minha Saúde</li>
+      <li onclick="location.href='duvidas.html'"><img src="/img/interrogação.png" alt=""> Dúvidas</li>
+      <li onclick="location.href='index.html'"><img src="/img/perfil.png" alt=""> Logout</li>
+    </ul>
+  </nav>
+
+  <main class="container">
+    <img src="/img/vacinapp.png" alt="Logo VacinApp" class="logo">
+
+    <section class="carteira">
+      <div class="info">
+        <h2>Carteira de Vacina e de Doações de Sangue</h2>
+        <img src="/img/medica.png" class="personagem">
+      </div>
+    </section>
+
+    <section class="calendario-vacinas">
+    <div class="calendario-header">
+        <button onclick="mudarMes(-1)">&#8592;</button>
+        <h3 id="mesAnoAtual">Julho 2025</h3>
+        <button onclick="mudarMes(1)">&#8594;</button>
+    </div>
+    <div class="dias-semana">
+        <span>Dom</span><span>Seg</span><span>Ter</span><span>Qua</span><span>Qui</span><span>Sex</span><span>Sáb</span>
+    </div>
+    <div class="dias-do-mes" id="diasCalendario">
+    </div>
+    </section>
+
+
+    <section class="doses">
+      <div class="header">
+        <h3>Minhas Doses</h3>
+        <button onclick="abrirFormulario()">+</button>
+      </div>
+
+      <div class="formulario" id="formulario">
+        <input type="text" id="nomeVacina" placeholder="Nome da Vacina/Doação de Sangue">
+        <input type="date" id="dataVacina">
+        <button onclick="adicionarVacina()">Adicionar</button>
+      </div>
+
+      <ul class="lista" id="listaVacinas">
+        <!-- Vacinas serão adicionadas aqui via JS -->
+      </ul>
+    </section>
+  </main>
+
+  <script src="/javascript/minhasaude.js"></script>
+</body>
+</html>
